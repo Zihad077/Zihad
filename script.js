@@ -4,11 +4,9 @@ const portfolioConfig = {
   email: "Zihad.Dev.Pro@gmail.com",
   github: "https://github.com/Zihad077",
   telegram: "https://t.me/Zihad0770",
-  apkUrl: "", // paste a real APK link to show "Download APK"
   projects: { // empty = no link shown. Add URLs when ready.
     focuslock: "#focuslock",
     focuslockDetails: "https://focuslockz.vercel.app",
-    focuslockRepo: "https://github.com/Zihad077/FocusLock", // delete if repo is private
 
     pocketai: "", bots: "", web: ""
   }
@@ -26,14 +24,13 @@ $$('[data-proj-link]').forEach(a => {
   const u = C.projects[a.dataset.projLink];
   if (u) { a.href = u; if (u.startsWith('http')) { a.target = '_blank'; a.rel = 'noopener'; } } else a.remove();
 });
-if (C.apkUrl) { const b = $('#apk'); b.href = C.apkUrl; b.hidden = false; }
 
 // Theme
 const root = document.documentElement;
 $('#theme').onclick = () => {
   const t = root.dataset.theme === 'dark' ? 'light' : 'dark';
   root.dataset.theme = t;
-  $('meta[name=theme-color]').content = t === 'dark' ? '#050505' : '#f6f5f2';
+  $('meta[name=theme-color]').content = t === 'dark' ? '#06080c' : '#eef0f5';
   try { localStorage.setItem('theme', t); } catch (e) {}
 };
 
@@ -47,18 +44,14 @@ const onScroll = () => {
 addEventListener('scroll', onScroll, { passive: true }); onScroll();
 toTop.onclick = () => scrollTo({ top: 0, behavior: 'smooth' });
 
-// Mobile menu
+// Dropdown menu
 const menu = $('#menu'), burger = $('#burger');
-const setMenu = o => {
-  menu.classList.toggle('open', o);
-  burger.setAttribute('aria-expanded', o);
-  burger.textContent = o ? '✕' : '☰';
-  menu.setAttribute('aria-hidden', !o);
-  document.body.style.overflow = o ? 'hidden' : '';
-};
-burger.onclick = () => setMenu(!menu.classList.contains('open'));
+const setMenu = o => { menu.classList.toggle('open', o); burger.setAttribute('aria-expanded', o); menu.setAttribute('aria-hidden', !o); };
+burger.onclick = e => { e.stopPropagation(); setMenu(!menu.classList.contains('open')); };
 $$('a', menu).forEach(a => a.onclick = () => setMenu(false));
+document.addEventListener('click', e => { if (!menu.contains(e.target)) setMenu(false); });
 addEventListener('keydown', e => e.key === 'Escape' && setMenu(false));
+addEventListener('resize', () => innerWidth > 820 && setMenu(false));
 
 // Active nav link
 const links = $$('.links a');
