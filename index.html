@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zihad — Developer & Builder</title>
+<meta name="description" content="Portfolio of Zihad — a student and developer building Android apps, bots and modern web experiences.">
+<meta name="theme-color" content="#050505">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zihad — Developer & Builder">
+<meta property="og:description" content="Android apps, bots and modern web experiences.">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/assets/images/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icons/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'}catch(e){}</script>
+</head>
+<body>
+<div class="cursor" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <a href="#home" class="logo">ZIHAD</a>
+  <nav class="links" aria-label="Main"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <div class="nav-r">
+    <button class="icon-btn" id="theme" aria-label="Toggle theme">◐</button>
+    <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+<div class="menu" id="menu" aria-hidden="true">
+  <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#contact">Contact</a>
+</div>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-img"><img src="assets/images/portrait.jpg" alt="Portrait of Zihad in a black hoodie, arms crossed" fetchpriority="high"></div>
+  <div class="hero-txt">
+    <p class="hi h1">Hey, I'm</p>
+    <h1 class="big h2"><span>ZIHAD</span></h1>
+    <p class="sub h3">Developer · Android Enthusiast · Builder</p>
+    <p class="desc h4">I build apps, bots and web experiences that turn ideas into real digital products.</p>
+    <div class="btns h5"><a class="btn primary" href="#projects">View Projects →</a><a class="btn" href="#contact">Contact Me</a></div>
+  </div>
+  <a class="scroll" href="#about">↓ Scroll to explore</a>
+  <div class="vert" aria-hidden="true">DEVELOPER<br>BUILDER</div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap two">
+    <div class="rv">
+      <p class="label"><b class="num">02</b> — About Me</p>
+      <h2>Who Am I?</h2>
+      <p class="lead">I'm Zihad, a student and developer from Bangladesh.</p>
+      <p class="muted">I enjoy building Android apps, bots and web projects while constantly learning new technologies and turning ideas into real digital products.</p>
+      <div class="cards3">
+        <div class="card"><span class="ic">✦</span><h3>Student</h3><p>Always learning</p></div>
+        <div class="card"><span class="ic">⌘</span><h3>Developer</h3><p>Building real solutions</p></div>
+        <div class="card"><span class="ic">◌</span><h3>Dreamer</h3><p>Thinking bigger</p></div>
+      </div>
+    </div>
+    <div class="about-img rv"><img src="assets/images/portrait.jpg" alt="Zihad standing with arms crossed" loading="lazy"></div>
+  </div>
+  <div class="wrap stats rv">
+    <div><b>02+</b><span>Apps Built</span></div><div><b>05+</b><span>Projects</span></div><div><b>100%</b><span>Passion</span></div>
+  </div>
+</section>
+
+<section class="sec" id="projects">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="label"><b class="num">03</b> — Selected Work</p><h2>My Projects</h2><p class="muted">A few things I've built. More on GitHub.</p></div>
+      <a class="btn" data-cfg="github" target="_blank" rel="noopener">View All Projects →</a>
+    </div>
+    <div class="grid">
+      <article class="proj big-card rv" data-proj="focuslock">
+        <div class="pimg phones"><img src="assets/projects/focuslock-home.jpg" alt="FocusLock home screen" loading="lazy"><img src="assets/projects/focuslock-block.jpg" alt="FocusLock block screen" loading="lazy"></div>
+        <div class="pbody"><img class="plogo" src="assets/projects/focuslock-logo.png" alt="FocusLock logo" loading="lazy"><p class="cat">Android App</p><h3>FocusLock</h3><p class="muted">Stay focused. Set app limits. Build better habits.</p><p class="tags"><i>Android</i><i>Kotlin</i><i>Productivity</i></p><a class="go" data-proj-link="focuslock" href="#focuslock">View Project <span>↗</span></a></div>
+      </article>
+      <article class="proj rv" data-proj="pocketai"><div class="pbody"><span class="ic big-ic">✺</span><p class="cat">Telegram AI Bot</p><h3>Pocket AI</h3><p class="muted">An AI assistant with multiple useful features.</p><p class="tags"><i>Python</i><i>AI</i><i>Telegram</i></p><a class="go" data-proj-link="pocketai">View Project <span>↗</span></a></div></article>
+      <article class="proj rv" data-proj="bots"><div class="pbody"><span class="ic big-ic">⌁</span><p class="cat">Automation</p><h3>Telegram Bots</h3><p class="muted">Custom bots for automation, utilities and information.</p><p class="tags"><i>Python</i><i>Telegram</i><i>APIs</i></p><a class="go" data-proj-link="bots">View Project <span>↗</span></a></div></article>
+      <article class="proj wide rv" data-proj="web"><div class="pbody"><span class="ic big-ic">◧</span><p class="cat">Websites</p><h3>Web Projects</h3><p class="muted">Modern, responsive websites built with HTML, CSS and JavaScript.</p><p class="tags"><i>HTML</i><i>CSS</i><i>JavaScript</i></p><a class="go" data-proj-link="web">View Project <span>↗</span></a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec fl" id="focuslock">
+  <div class="wrap">
+    <p class="label rv"><b class="num">04</b> — Featured Project</p>
+    <div class="fl-top">
+      <div class="rv"><h2 class="huge">FocusLock</h2><p class="lead">Stay Focused. Be Productive.</p><p class="muted">A powerful Android app designed to help users control app usage, set limits and build better digital habits.</p>
+        <div class="btns"><a class="btn primary" data-proj-link="focuslockDetails" href="#focuslock">View Details →</a><a class="btn" id="apk" hidden>Download APK →</a></div></div>
+      <div class="showcase rv" aria-label="FocusLock screenshots"><img class="s1" src="assets/projects/focuslock-home.jpg" alt="FocusLock home screen with focus score and streak" loading="lazy"><img class="s2" src="assets/projects/focuslock-block.jpg" alt="FocusLock block screen: Focus mode on" loading="lazy"></div>
+    </div>
+    <div class="cards3 rv"><div class="card"><h3>App Limits</h3><p>Set time limits for individual apps.</p></div><div class="card"><h3>Challenges</h3><p>Complete challenges to unlock access.</p></div><div class="card"><h3>Better Habits</h3><p>Build a focused digital routine.</p></div></div>
+  </div>
+</section>
+
+<section class="sec" id="skills">
+  <div class="wrap">
+    <div class="rv"><p class="label"><b class="num">05</b> — Skills</p><h2>Things I Work With</h2></div>
+    <div class="grid4">
+      <div class="card rv"><span class="ic">▣</span><h3>Android</h3><p>Kotlin · Java</p></div>
+      <div class="card rv"><span class="ic">❯</span><h3>Python</h3><p>Bots · Automation</p></div>
+      <div class="card rv"><span class="ic">‹›</span><h3>HTML / CSS / JavaScript</h3><p>Web Development</p></div>
+      <div class="card rv"><span class="ic">◈</span><h3>Firebase</h3><p>Backend · Database</p></div>
+      <div class="card rv"><span class="ic">⑂</span><h3>Git & GitHub</h3><p>Version Control</p></div>
+      <div class="card rv"><span class="ic">⇄</span><h3>APIs</h3><p>Integrations</p></div>
+      <div class="card rv"><span class="ic">◐</span><h3>UI/UX</h3><p>Design & Experience</p></div>
+      <div class="card rv"><span class="ic">$_</span><h3>Linux / Termux</h3><p>Terminal · Scripts</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="rv"><p class="label"><b class="num">06</b> — Services</p><h2>What I Can Build</h2></div>
+    <div class="grid3">
+      <div class="card rv"><h3>Android App Development</h3><p>Modern Android applications with clean UI and reliable functionality.</p></div>
+      <div class="card rv"><h3>Web Development</h3><p>Responsive and modern websites.</p></div>
+      <div class="card rv"><h3>Telegram Bot Development</h3><p>Useful automation and bot systems.</p></div>
+      <div class="card rv"><h3>UI/UX Design</h3><p>Clean and user-friendly interfaces.</p></div>
+      <div class="card rv"><h3>API Integration</h3><p>Connect applications with external services.</p></div>
+      <div class="card rv"><h3>Bug Fixing & Support</h3><p>Fix issues and improve existing projects.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="statement"><div class="rv"><p class="huge">Always learning.<br>Always building.</p><p class="muted">Turning ideas into real digital products.</p></div></section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <p class="label rv"><b class="num">07</b> — Contact</p>
+    <h2 class="huge rv">Let's Work Together.</h2>
+    <p class="muted rv">Have a project in mind? Feel free to reach out.<br>I'm always open to new ideas and opportunities.</p>
+    <a class="btn primary rv" data-cfg="email" data-mail>Get In Touch →</a>
+    <div class="clinks rv">
+      <a data-cfg="github" target="_blank" rel="noopener"><span>GitHub</span><b>@Zihad077</b></a>
+      <a data-cfg="telegram" target="_blank" rel="noopener"><span>Telegram</span><b>@Zihad0770</b></a>
+      <a data-cfg="email" data-mail><span>Email</span><b data-email-text></b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap frow"><b>ZIHAD</b><span>Build · Create · Grow</span><span>© 2026 Zihad</span></div>
+  <p class="flinks"><a data-cfg="github" target="_blank" rel="noopener">GitHub</a> · <a data-cfg="telegram" target="_blank" rel="noopener">Telegram</a> · <a data-cfg="email" data-mail>Email</a></p>
+</footer>
+<button class="totop" id="totop" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
