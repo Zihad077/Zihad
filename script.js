@@ -5,7 +5,7 @@ const portfolioConfig = {
   github: "https://github.com/Zihad077",
   telegram: "https://t.me/Zihad0770",
   apkUrl: "", // paste a real APK link to show "Download APK"
-  projects: { toolzhb.vercel.app
+  projects: { // empty = no link shown. Add URLs when ready.
     focuslock: "#focuslock", focuslockDetails: "#focuslock",
     pocketai: "", bots: "", web: ""
   }
