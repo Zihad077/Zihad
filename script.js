@@ -35,14 +35,14 @@ $('#theme').onclick = () => {
 };
 
 // Nav scroll state + back to top
-const nav = $('#nav'), top = $('#totop');
+const nav = $('#nav'), toTop = $('#totop');
 const onScroll = () => {
   nav.classList.toggle('solid', scrollY > 30);
-  top.classList.toggle('show', scrollY > 700);
+  toTop.classList.toggle('show', scrollY > 700);
   const h = $('.hero-img img'); if (h && scrollY < innerHeight) h.style.transform = `translateY(${scrollY * 0.08}px) scale(1.04)`;
 };
 addEventListener('scroll', onScroll, { passive: true }); onScroll();
-top.onclick = () => scrollTo({ top: 0, behavior: 'smooth' });
+toTop.onclick = () => scrollTo({ top: 0, behavior: 'smooth' });
 
 // Mobile menu
 const menu = $('#menu'), burger = $('#burger');
